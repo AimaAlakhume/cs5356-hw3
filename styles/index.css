@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    background-color: #E0C2BA;
+    border: .25rem solid #822D2A;
+}
+
+.header-title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: .125rem solid black;
+}
+
+.header-nav {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+}
+
+.header-nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-nav a {
+    color: black;
+}
+
+.header-nav a:visited {
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    width: 50%;
+}
+
+.intro-img {
+    width: 50%;
+}
+
+.avatar {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+}
+
+section > p {
+    padding: 1rem 1rem 0;
+}
+
+h3 {
+    padding-bottom: .5rem;
+}
+
+.socials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: white;
+    border: .25rem solid black;
+}
+
+.social-link {
+    color: #822D2A;
+}
