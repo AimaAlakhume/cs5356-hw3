@@ -63,7 +63,7 @@ header {
     color: black;
 }
 
-.main {
+.main-content {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -71,6 +71,25 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.writeup-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    border: .125rem solid #ccc;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
 .intro-section {
@@ -248,7 +267,7 @@ footer {
 
 
 @media (min-width: 768px) {
-    .main {
+    .main-content {
         flex-direction: row;
     }
 
