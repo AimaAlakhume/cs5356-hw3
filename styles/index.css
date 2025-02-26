@@ -14,18 +14,27 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 header {
     font-weight: bold;
     text-align: center;
     padding: 1rem;
-    background-color: #E0C2BA;
-    border: .25rem solid #822D2A;
+    background-color: #cde7d5;
+    border: .25rem solid #78a88f;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-title {
     font-size: 2rem;
     padding-bottom: 1rem;
-    border-bottom: .125rem solid black;
+    border-bottom: .05rem solid black;
 }
 
 .header-nav {
@@ -43,6 +52,11 @@ header {
 
 .header-nav a {
     color: black;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #822D2A;
 }
 
 .header-nav a:visited {
@@ -51,25 +65,25 @@ header {
 
 .main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 1rem;
-    background-color: #f0f0f0;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .intro-section {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-.intro {
-    display: flex;
-    flex-direction: row;
+    margin: 1rem;
 }
 
 .intro-title {
-    font-size: 2rem;
+    font-size: 2.5rem !important;
     padding-bottom: 1rem;
 }
 
@@ -83,10 +97,74 @@ header {
 }
 
 .avatar {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 12rem;
+    height: auto;
     border-radius: 50%;
     margin-bottom: 1.25rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    border: .125rem solid #ccc;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-header-text {
+    margin-top: 1rem;
+}
+
+.intro-name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.intro-subtitle {
+    font-size: 1.25rem;
+    color: #963f3f;
+    font-style: italic;
+}
+
+.intro-title {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #59625e;
+}
+
+.intro-bio {
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(93, 93, 93);
+}
+
+.bio-section {
+    text-align: left;
+    color: black;
+    padding: .5rem 0;
+}
+
+.first-bio-section {
+    text-align: center;
+    color: rgb(93, 93, 93);
+    padding: .5rem 0;
 }
 
 section > p {
@@ -98,10 +176,10 @@ h3 {
 }
 
 .socials {
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 1rem;
     background-color: white;
     border: .25rem solid black;
@@ -109,4 +187,105 @@ h3 {
 
 .social-link {
     color: #822D2A;
+}
+
+.linkedin-logo {
+    width: 2rem;
+    height: auto;
+    margin: 0 .5rem;
+    padding-top: .2rem;
+}
+
+.github-logo {
+    width: 2.5rem;
+    margin-left: 1.5rem;
+    height: auto;
+}
+
+.youtube-logo {
+    width: 6rem;
+    height: auto;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #cde7d5;
+    border: .25rem solid #78a88f;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doggo-corner {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border: .125rem solid #ccc;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.doggo-corner img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.doggo-corner button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #822D2A;
+    color: white;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.doggo-corner button:hover {
+    background-color: #5a1e1b;
+}
+
+.details {
+    padding: 1rem 0 0;
+    text-align: center;
+}
+
+.details p {
+    margin: .5rem;
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .intro {
+        width: 80%;
+    }
+
+    .doggo-corner {
+        width: 20%;
+    }
+
+    .intro-card {
+        flex-direction: column;
+    }
+
+    .intro-header {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .intro-header-text {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .intro-bio {
+        margin-top: 1rem;
+    }
 }

@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aima Alakhume</title>
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-    <header>
-        <h1 class="header-title">CS5356 Homework 3</h1>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aima Alakhume</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <meta property="og:title" content="Aima Alakhume's Portfolio">
+        <meta property="og:description" content="Learn more about Aima Alakhume's background and projects.">
+        <meta property="og:image" content="assets/images/avatar.jpg">
+        <meta property="og:url" content="https://aimaalakhume.github.io/cs5356-hw3/">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="module" src="scripts/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="header-title">CS5356 Homework 3</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="intro-section">
+                <h2 class="intro-title"> About Me </h2>
+                <div class="intro-card">
+                    <div class="intro-header">
+                        <img src="assets/images/avatar.jpg" class="avatar" alt="Aima Alakhume">
+                        <div class="intro-header-text">
+                            <h3 class="intro-name">Aima Alakhume</h3>
+                            <p class="intro-subtitle">Connective Media Student</p>
+                        </div>
+                    </div>
+                    <div class="intro-bio">
+                        <p class="first-bio-section">
+                            I grew up in Lagos, Nigeria, and pursued a Bachelor’s in Electrical Engineering at NYU.
+                            My goals at Cornell Tech are to deepen my knowledge in user-centered
+                            design and build immersive, sustainable experiences.
+                        </p>
+
+                        <p class="bio-section">
+                            👩🏾‍💻 I'm passionate about leveraging technology to craft engaging experiences that entertain,
+                            educate, and inspire. With a diverse background encompassing electrical engineering,
+                            full-stack development, and a forthcoming dual Master's degree from Cornell Tech (specializing
+                            in Information Systems and Connective Media), I possess the technical skills and creative vision
+                            to bring unique ideas to life.
+                        </p>
+
+                        <p class="bio-section">
+                            🌍 My experience spans a variety of projects, from enhancing Google Search with educational
+                            features to leading the development of a mobile app promoting global health initiatives.
+                            I've also spearheaded the creation of an augmented reality game, EcoTails, designed to incentivize
+                            sustainable practices through immersive gameplay.
+                        </p>
+
+                        <p class="bio-section">
+                            🌱 Whether it's building educational tools, engaging mobile apps, or immersive gaming experiences,
+                            I'm driven to create products that resonate with users and contribute to a more sustainable and
+                            equitable future.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <aside class="doggo-corner">
+                <h3>Doggo Corner</h3>
+                <img id="dog-image" src="" alt="Cute Doggo">
+                <button id="dog-button">I want to see a cute dog!</button>
+                <details class="details">
+                    <summary>Fun Fact!</summary>
+                    <p>I'm actually a cat person :3</p>
+                </details>
+            </aside>
+        </main>
+        <footer>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/aima-alakhume/" class="social-link"><img src="assets/icons/linkedin.png" alt="LinkedIn" class="linkedin-logo"></a></li>
+                <li><a href="https://www.github.com/AimaAlakhume/" class="social-link"><img src="assets/icons/github.png" alt="GitHub" class="github-logo"></a></li>
+                <li><a href="https://www.youtube.com/@aimaalakhume/" class="social-link"><img src="assets/icons/youtube.png" alt="YouTube" class="youtube-logo"></a></li>
             </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <section class="intro-section">
-            <h2 class="intro-title"> About Me </h2>
-            <div class="intro">
-                <section class="intro-text">
-                    <p> I grew up in Lagos, Nigeria, and pursued a Bachelor’s in Electrical Engineering at NYU.
-                        Interested in sustainability, I combine game design with environmental projects to drive
-                        user engagement. My goals at Cornell Tech are to deepen my knowledge in user-centered
-                        design and build immersive, sustainable experiences. </p>
-                </section>
-                <section class="intro-img">
-                    <img src="assets/images/avatar.jpg" class="avatar" alt="Aima Alakhume">
-                </section>
-            </div>
-            <details>
-                <summary>Fun Fact!</summary>
-                <p>I have worked on various projects that integrate technology and sustainability, including a mobile app that encourages users to reduce their carbon footprint.</p>
-            </details>
-        </section>
-        <aside class="socials">
-            <h3> Links </h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/aima-alakhume/" class="social-link">LinkedIn</a></li>
-                <li><a href="https://www.github.com/AimaAlakhume/" class="social-link">GitHub</a></li>
-                <li><a href="https://www.youtube.com/AimaAlakhume/" class="social-link">YouTube</a></li>
-            </ul>
-        </aside>
-    </main>
-</body>
+        </footer>
+        <script data-goatcounter="https://your-goatcounter-url.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    </body>
 </html>
